@@ -1,3 +1,11 @@
 spring:
   application:
     name: htmx-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,prometheus"
+  endpoint:
+    health:
+      show-details: always
